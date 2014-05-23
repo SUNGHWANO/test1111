@@ -41,8 +41,6 @@ $(function(){
     	 if (msDown) {
     		 var mouseX = e.pageX;
     		 var boxMouseX = mouseX - boxOffset;
-    		 console.log(downX);
-    		 console.log(e.pageX);
     		 if (e.pageX < downX) {
     			 $("#pane").hide("slide", {
     				 direction : "right"
@@ -80,10 +78,7 @@ $(function(){
         if (lbDown) {
           var mouseX = e.pageX;
           var boxMouseX = mouseX - boxOffset;
-          console.log(downX1);
-          console.log(e.pageX);
           if (e.pageX > downX1) {
-
             $("#pane").hide("slide", {
               direction : "right"
             }, 600);
@@ -107,7 +102,7 @@ $(function(){
     
     var downX2;
     $('#pane2').mousedown(function(e) {
-    	var downX2 = e.pageX;
+    	downX2 = e.pageX;
         if (e.which) {
           lbDown = true;
         } else {
@@ -118,8 +113,6 @@ $(function(){
         if (lbDown) {
           var mouseX = e.pageX;
           var boxMouseX = mouseX - boxOffset;
-          console.log(downX2);
-          console.log(e.pageX);
           if (e.pageX > downX2) {
 
             $("#pane").hide("slide", {
