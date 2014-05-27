@@ -59,7 +59,7 @@ var position = 'bottom';
 
 $('#setting').draggable({axis: "y"}, { revert: 'invalid' });
 
-$('#setting_down').click(function(){
+$('#setting').click(function(){
 	if (position == 'bottom') {
  		$('#setting').animate({top: 60}, {duration: 700
 			, step: function(now, fx) {
