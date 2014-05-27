@@ -107,12 +107,12 @@ $(function(){
 	
 	$("#slide").css("display", "none");
 
-	$("#menuLeft").click(function() {
+	$(document.body).click(function() {
 		$(".img").css("display", "");
 		$("hr").css("display", "");
 		$("#icons").appendTo("#slide");
 		$("#input").val("");
-		$("#slide").toggle("fade");
+		$("#slide").toggle("slide");
 	});
 	
 		
