@@ -8,7 +8,7 @@ border: 1px solid #999; display: block; width: 30px; height: 30px; }
 
 
 #slide {
-  height:533px; width:104px; overflow:hidden; 
+  height:533px; width:304px; overflow:hidden; 
   background: #ccc;
   position: absolute;
   left: 0;
